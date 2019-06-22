@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+  body{
+    background-color: #313131;
+
+
+  }
+
+  /* ACA EMPIEZA EL HEADER */
+  /* ACÁ DEFINO COLOR, SOMBRAS Y FUENTE DEL HEADER */
+  header{
+    background-color: #313131;
+    -webkit-box-shadow: -2px 13px 5px 0px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: -2px 13px 5px 0px rgba(0, 0, 0, 0.37);
+    box-shadow: -2px 13px 5px 0px rgba(0, 0, 0, 0.37);
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+
+  /* ESTE ES EL BORDE QUE SUBDIVIDE AL LOGIN Y REGISTRO */
+  .primero{
+    border-right: 1px solid white ;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  /* ESTILOS DE LA LISTA DE ITEMS DEL MENU */
+  header nav div div a{
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    color: white !important;
+  }
+
+  header nav div div a:hover{
+    font-weight: 700;
+    color: #c69f57 !important;
+  }
+
+
+  /* ESTOS DOS DE ABAJO LE CAMBIAN EL COLOR A LA HAMBURGUESA */
+  .navbar-toggler{
+    border-color: rgb(198, 159, 87) !important;
+    color: rgb(198, 159, 87) !important;
+  }
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(198, 159, 87)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+   }
+
+  /* ESTOS DOS DE ABAJO LE SACAN EL PADDING AL LOGIN Y REGISTRO EN DESKTOP
+  PORQUE SINO EL FOOTER QUEDABA MUY ALTO */
+
+  .s1{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .s2{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+/* ACÁ TERMINA EL HEADER */
+/* ACÁ TERMINA EL HEADER
+ACÁ EMPIEZA EL MAIN */
+main{
+padding-top: 114px;
+color: #c69f57;
+font-family: 'Noto Serif', serif;
+/* background-color: #313131; */
+z-index: 100;
+position: relative;
+}
+
+main form label{
+  font-size: 22px;
+}
+main h1{
+  text-align: center;
+  font-size: 60px;
+}
+
+main button{
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-top: 20px;
+}
+main {
+  max-width: 200px;
+  margin: auto;
+
+}
+
+/* ACÁ TERMINA EL MAIN
+ACÁ EMPIEZA EL FOOTER */
+footer{
+  background-color: #c69f57;
+  color: #313131;
+  bottom:0;
+  position: fixed;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+footer img{
+  margin-right:10px;
+  margin-top:8px;
+  height: 44px;
+  padding: 0px 15px;
+  border-right: 2px solid #313131;
+}
+
+h5 {
+  padding-top: 20px;
+  padding-left: 10px;
+  color: #313131;
+  font-size: 14px;
+}
+
+footer a{
+  margin-top: 16px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+footer a:hover{
+  text-decoration: none;
+}
+
+/* ICONOS DEL FOOTER */
+.icon-facebook2,
+.icon-twitter,
+.icon-instagram
+ {
+  color: #313131;
+}
+
+/* HOVER BORDE NEGRO ICONOS */
+.icon-facebook2:hover,
+.icon-twitter:hover,
+.icon-instagram:hover
+ {
+   border: 1px solid #313131;
+   border-radius: 3px;
+   padding: 5PX;
+   text-decoration: none;
+}
+/* HOVER ICONOS BLANCOS */
+
+/* .icon-facebook2:hover,
+.icon-twitter:hover,
+.icon-instagram:hover
+ {
+  color: white;
+} */
+
+
+  /* ACÁ TERMINA EL FOOTER */
+.btn-mio,
+.btn-mio:active{
+  background-color: #c69f57;
+  border-radius: 8px;
+  font-size: 27px;
+  color: #313131;
+  padding-top: 0px;
+  padding-bottom: 0px;}
+
+  .btn-mio:hover{
+    color: #e1e1e1;
+  }
+
+  .form-check-input,
+  .form-check-input:hover,
+  .form-check-input:active {
+  margin-top: 7px;
+  }
+
+@media (min-width: 100px) and (max-width: 767.98px) {
+  .primero{
+      border-right: none ;
+  }
+  .s1{
+    margin-top: -17px;
+  }
+  .s2{
+    padding-top: 10px;
+  }
+  .icon-instagram{
+    display: none;
+  }
+  .icon-twitter{
+    display: none;
+  }
+   footer{
+     bottom:0;
+     position: relative;
+
+     }
+   }
+
+}

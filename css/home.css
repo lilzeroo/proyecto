@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #c69f57;
+
+}
+
+/* INICIO DEL HEADER */
+/* .head{
+  max-width: 100%;
+  margin: 0 auto;
+  background: #313131;
+} */
+header{
+  background-color: #313131;
+  -webkit-box-shadow: -2px 13px 5px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -2px 13px 5px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: -2px 13px 5px 0px rgba(0, 0, 0, 0.37);
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* ESTE ES EL BORDE QUE SUBDIVIDE AL LOGIN Y REGISTRO */
+.primero{
+  border-right: 1px solid white ;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-right: 10px;
+
+}
+
+/* ESTILOS DE LA LISTA DE ITEMS DEL MENU */
+header nav div div a{
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+  color: white !important;
+}
+
+header nav div div a:hover{
+  font-weight: 700;
+  color: #c69f57 !important;
+}
+
+.boton{
+  background-color: #313131;
+  border: #313131;
+}
+.boton img:hover{
+background-color: #c69f57;
+}
+/* ESTOS DOS DE ABAJO LE CAMBIAN EL COLOR A LA HAMBURGUESA */
+.navbar-toggler{
+  border-color: rgb(198, 159, 87) !important;
+  color: rgb(198, 159, 87) !important;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(198, 159, 87)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+ }
+
+/* ESTOS DOS DE ABAJO LE SACAN EL PADDING AL LOGIN Y REGISTRO EN DESKTOP
+PORQUE SINO EL FOOTER QUEDABA MUY ALTO */
+
+.s1{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.s2{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* FIN DEL HEADER */
+
+/* INICIO IMAGENES  */
+#carouselExampleControls {
+  z-index: 1;
+  max-width: 100%;
+  padding-top: 100px;
+}
+
+.carousel-control-prev{
+  margin-top: 100px;
+}
+
+.carousel-control-next{
+  margin-top: 100px;
+}
+/* FIN DE IMAGENES  */
+
+/* INICIO ARTICULO VINOS */
+.articuloVino {
+  background-color: #313131;
+  text-align: center;
+  z-index: 1;
+  padding-bottom: 100px;
+  padding-top: 100px;
+
+}
+
+.articuloVino h2 {
+  /* padding: 50px 0 0 0; */
+  color: #c69f57;
+  font-family: 'Noto Serif';
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.borde{
+  border-bottom: 2px solid #c69f57;
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
+.articuloVino .subtitulo {
+  margin-bottom: 0px;
+  color: #e1e1e1;
+  width: 50%;
+  margin: 0 auto;
+  font-weight: lighter;
+}
+
+/* FIN ARTICULO VINOS*/
+
+/* INICIO FAQ Preguntas Frecuentes*/
+.faq {
+  background-color: #c69f57;
+  text-align: center;
+  z-index: 1;
+  padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.faq h2 {
+
+  font-family: 'Noto Serif';
+}
+
+.borde2{
+  border-bottom: 2px solid #313131;
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+.faq .subtitulo {
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.faq p {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+/* FIN FAQ Preguntas Frecuentes*/
+
+
+
+/*INICIO CONTACTO*/
+.contacto{
+  background-color: #313131;
+  max-width: 100%;
+  padding-top: 30px;
+  color: #c69f57;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.contacto h2{
+  font-family: 'Noto Serif';
+}
+.contacto .subtitulo {
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+form {
+  margin: auto;
+  width: 50%;
+}
+fieldset {
+  margin: 0 auto;
+  max-width: 100%;
+  border: solid #c69f57 1px;
+  background-color: #333333;
+  padding: 1rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+/*  -webkit-box-shadow: 1px 1px 1px #c69f57;
+  -moz-box-shadow: 1px 1px 1px #c69f57;
+  box-shadow: 1px 1px 1px #c69f57; */
+  margin-bottom: 3rem;
+}
+form label {
+  /* color: white; */
+  float: left;
+}
+.boton {
+  color: #ffffff;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10rem 3 rem;
+  margin-top: 1rem;
+  display: inline-block;
+  text-align: center;
+}
+.boton-naranja {
+  background-color: #333333;
+  border: solid #c69f57 1px;
+}
+.boton:hover {
+  cursor: pointer;
+  background-color: #c69f57;
+  color: #333333;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 1px;
+  display: block;
+  width: 100%;
+  background-color: #e1e1e1;
+  margin: auto;
+  margin-bottom: 1rem;
+  border:none;
+  border-radius: .5rem;
+  color:#313131;
+}
+.row-fluid {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.row-fluid iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.mapa {
+  margin: auto;
+  width: 50%;
+  border: solid #c69f57 1px;
+  background-color: #333333;
+  padding: 1rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+article .row {
+  margin: auto;
+  width: 50%;
+}
+article .row .espacio{
+  margin-top: 15px;
+}
+
+/*FIN CONTACTO*/
+/*INICIO FOOTER*/
+footer{
+  background-color: #c69f57;
+  color: #313131;
+  bottom:0;
+  position: static;
+  width: 98%;
+  padding-left: 22px;
+  height: 61px;
+
+}
+
+footer img{
+  margin-right:10px;
+  margin-top:8px;
+  height: 44px;
+  padding: 0px 15px;
+  border-right: 2px solid #313131;
+
+}
+
+h5 {
+  padding-top: 20px;
+  padding-left: 10px;
+  color: #313131;
+  font-size: 14px;
+}
+
+footer a{
+  margin-top: 16px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+footer a:hover{
+  text-decoration: none;
+}
+
+/* ICONOS DEL FOOTER */
+.icon-facebook2,
+.icon-twitter,
+.icon-instagram
+ {
+  color: #313131;
+}
+
+/* HOVER BORDE NEGRO ICONOS */
+.icon-facebook2:hover,
+.icon-twitter:hover,
+.icon-instagram:hover
+ {
+   border: 1px solid #313131;
+   border-radius: 3px;
+   padding: 5PX;
+   text-decoration: none;
+}
+/* HOVER ICONOS BLANCOS */
+
+/* .icon-facebook2:hover,
+.icon-twitter:hover,
+.icon-instagram:hover
+ {
+  color: white;
+} */
+
+
+/* FIN DEL FOOTER*/
+.btn-mio,
+.btn-mio:active{
+  background-color: #c69f57;
+  border-radius: 8px;
+  font-size: 27px;
+  color: #313131;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 15px;
+}
+.btn-mio:hover{
+  color: #e1e1e1;
+}
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 560px) {
+  nav {
+    display: none;
+  }
+  header{
+    background-color: none;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 767.98px) {
+  .primero{
+    border-right: none ;
+}
+.s1{
+  margin-top: -17px;
+}
+.s2{
+  padding-top: 10px;
+}
+
+.icon-instagram{
+  display: none;
+}
+.icon-twitter{
+  display: none;
+}
+footer{
+    width: 96%;
+}
+ }
