@@ -86,9 +86,18 @@ main button{
     margin-top: 20px;
 }
 main {
-  max-width: 200px;
+  max-width: 600px;
   margin: auto;
+  overflow: hidden;
 
+}
+.stark {
+  border-radius: 200px;
+  float: left;
+}
+.texto-perfil {
+  padding-top: 40px;
+  padding-left: 240px;
 }
 
 /* ACÁ TERMINA EL MAIN
