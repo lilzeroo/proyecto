@@ -9,11 +9,6 @@ body {
 }
 
 /* INICIO DEL HEADER */
-/* .head{
-  max-width: 100%;
-  margin: 0 auto;
-  background: #313131;
-} */
 header{
   background-color: #313131;
   -webkit-box-shadow: -2px 13px 5px 0px rgba(0, 0, 0, 0.37);
@@ -22,7 +17,7 @@ header{
   font-family: 'Alegreya Sans', sans-serif;
 }
 
-/* ESTE ES EL BORDE QUE SUBDIVIDE AL LOGIN Y REGISTRO */
+/* HEADER borde de division de los 2 menus*/
 .primero{
   border-right: 1px solid white ;
   padding-top: 17px;
@@ -101,7 +96,6 @@ PORQUE SINO EL FOOTER QUEDABA MUY ALTO */
 }
 
 .articuloVino h2 {
-  /* padding: 50px 0 0 0; */
   color: #c69f57;
   font-family: 'Noto Serif';
   margin: 0 auto;
@@ -136,7 +130,6 @@ PORQUE SINO EL FOOTER QUEDABA MUY ALTO */
 }
 
 .faq h2 {
-
   font-family: 'Noto Serif';
 }
 
@@ -190,15 +183,12 @@ fieldset {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-/*  -webkit-box-shadow: 1px 1px 1px #c69f57;
-  -moz-box-shadow: 1px 1px 1px #c69f57;
-  box-shadow: 1px 1px 1px #c69f57; */
   margin-bottom: 3rem;
 }
 form label {
-  /* color: white; */
   float: left;
 }
+
 .boton {
   color: #ffffff;
   font-weight: 100;
@@ -232,12 +222,14 @@ textarea {
   border-radius: .5rem;
   color:#313131;
 }
+
 .row-fluid {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
+
 .row-fluid iframe {
     position: absolute;
     top:0;
@@ -245,6 +237,7 @@ textarea {
     width: 100%;
     height: 100%;
 }
+
 .mapa {
   margin: auto;
   width: 50%;
@@ -256,15 +249,17 @@ textarea {
   border-radius: 10px;
   margin-bottom: 3rem;
 }
+
 article .row {
   margin: auto;
   width: 50%;
 }
+
 article .row .espacio{
   margin-top: 15px;
 }
-
 /*FIN CONTACTO*/
+
 /*INICIO FOOTER*/
 footer{
   background-color: #c69f57;
@@ -274,7 +269,6 @@ footer{
   width: 98%;
   padding-left: 22px;
   height: 61px;
-
 }
 
 footer img{
@@ -283,7 +277,6 @@ footer img{
   height: 44px;
   padding: 0px 15px;
   border-right: 2px solid #313131;
-
 }
 
 h5 {
@@ -321,17 +314,8 @@ footer a:hover{
    padding: 5PX;
    text-decoration: none;
 }
-/* HOVER ICONOS BLANCOS */
-
-/* .icon-facebook2:hover,
-.icon-twitter:hover,
-.icon-instagram:hover
- {
-  color: white;
-} */
-
-
 /* FIN DEL FOOTER*/
+
 .btn-mio,
 .btn-mio:active{
   background-color: #c69f57;
@@ -358,21 +342,21 @@ footer a:hover{
 @media (min-width: 100px) and (max-width: 767.98px) {
   .primero{
     border-right: none ;
-}
-.s1{
-  margin-top: -17px;
-}
-.s2{
-  padding-top: 10px;
-}
+  }
+  .s1{
+    margin-top: -17px;
+  }
+  .s2{
+    padding-top: 10px;
+  }
 
-.icon-instagram{
-  display: none;
+  .icon-instagram{
+    display: none;
+  }
+  .icon-twitter{
+    display: none;
+  }
+  footer{
+      width: 96%;
+  }
 }
-.icon-twitter{
-  display: none;
-}
-footer{
-    width: 96%;
-}
- }

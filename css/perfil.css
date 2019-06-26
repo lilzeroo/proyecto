@@ -5,8 +5,6 @@
 
   body{
     background-color: #313131;
-
-
   }
 
   /* ACA EMPIEZA EL HEADER */
@@ -19,7 +17,7 @@
     font-family: 'Alegreya Sans', sans-serif;
   }
 
-  /* ESTE ES EL BORDE QUE SUBDIVIDE AL LOGIN Y REGISTRO */
+  /* HEADER borde de division de los 2 menus*/
   .primero{
     border-right: 1px solid white ;
     padding-top: 17px;
@@ -51,7 +49,6 @@
 
   /* ESTOS DOS DE ABAJO LE SACAN EL PADDING AL LOGIN Y REGISTRO EN DESKTOP
   PORQUE SINO EL FOOTER QUEDABA MUY ALTO */
-
   .s1{
     padding-top: 0;
     padding-bottom: 0;
@@ -62,13 +59,12 @@
     padding-bottom: 0;
   }
 /* ACÁ TERMINA EL HEADER */
-/* ACÁ TERMINA EL HEADER
-ACÁ EMPIEZA EL MAIN */
+
+/* ACÁ EMPIEZA EL MAIN */
 main{
 padding-top: 114px;
 color: #c69f57;
 font-family: 'Noto Serif', serif;
-/* background-color: #313131; */
 z-index: 100;
 position: relative;
 }
@@ -85,22 +81,24 @@ main button{
     font-family: 'Alegreya Sans', sans-serif;
     margin-top: 20px;
 }
+
 main {
   max-width: 600px;
   margin: auto;
   overflow: hidden;
-
 }
+
 .stark {
   border-radius: 200px;
   float: left;
 }
+
 .texto-perfil {
   padding-top: 40px;
   padding-left: 240px;
 }
-
 /* ACÁ TERMINA EL MAIN
+
 ACÁ EMPIEZA EL FOOTER */
 footer{
   background-color: #c69f57;
@@ -156,15 +154,7 @@ footer a:hover{
 }
 /* HOVER ICONOS BLANCOS */
 
-/* .icon-facebook2:hover,
-.icon-twitter:hover,
-.icon-instagram:hover
- {
-  color: white;
-} */
-
-
-  /* ACÁ TERMINA EL FOOTER */
+/* ACÁ TERMINA EL FOOTER */
 .btn-mio,
 .btn-mio:active{
   background-color: #c69f57;
@@ -203,8 +193,5 @@ footer a:hover{
    footer{
      bottom:0;
      position: relative;
-
      }
    }
-
-}
