@@ -69,11 +69,7 @@ header nav div div a:hover {
   padding-bottom: 0;
 }
 
-@media (min-width: 678px){
-  .logReg{
-    text-align: left;
-  }
-}
+
 /* FIN DEL HEADER */
 
 /* INICIO IMAGENES  */
@@ -128,6 +124,10 @@ header nav div div a:hover {
 /* FIN ARTICULO VINOS*/
 
 /* INICIO FAQ Preguntas Frecuentes*/
+
+#faqs{
+  padding-top: 50px;
+}
 .faq {
   background-color: #c69f57;
   text-align: center;
@@ -162,6 +162,9 @@ header nav div div a:hover {
 
 
 /*INICIO CONTACTO*/
+#elcontacto{
+  padding-top: 100px;
+}
 .contacto{
   background-color: #313131;
   max-width: 100%;
@@ -381,4 +384,11 @@ footer a:hover{
       bottom: 0;
       position: relative;
     }
+
+}
+
+@media (min-width: 678px) and (max-width: 767.98px){
+  .logReg{
+    text-align: left;
+  }
 }
