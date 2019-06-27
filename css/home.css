@@ -7,9 +7,9 @@ body {
   background-color: #c69f57;
 
 }
-
-/* INICIO DEL HEADER */
-header{
+/*INICIO DEL HEADER*/
+/* ACÁ DEFINO COLOR, SOMBRAS Y FUENTE DEL HEADER */
+header {
   background-color: #313131;
   -webkit-box-shadow: -2px 13px 5px 0px rgba(0, 0, 0, 0.37);
   -moz-box-shadow: -2px 13px 5px 0px rgba(0, 0, 0, 0.37);
@@ -17,56 +17,57 @@ header{
   font-family: 'Alegreya Sans', sans-serif;
 }
 
-/* HEADER borde de division de los 2 menus*/
-.primero{
-  border-right: 1px solid white ;
+/* HEADER borde de division de los 2 menus */
+.primero {
+  border-right: 1px solid white;
   padding-top: 17px;
   padding-bottom: 17px;
-  padding-right: 10px;
-
 }
 
 /* ESTILOS DE LA LISTA DE ITEMS DEL MENU */
-header nav div div a{
+header nav div div a {
   font-size: 20px;
   color: white;
   font-weight: 300;
   color: white !important;
 }
 
-header nav div div a:hover{
+header nav div div a:hover {
   font-weight: 700;
   color: #c69f57 !important;
 }
 
-.boton{
+.boton {
   background-color: #313131;
   border: #313131;
 }
-.boton img:hover{
-background-color: #c69f57;
+
+.boton img:hover {
+  background-color: #c69f57;
 }
+
 /* ESTOS DOS DE ABAJO LE CAMBIAN EL COLOR A LA HAMBURGUESA */
-.navbar-toggler{
+.navbar-toggler {
   border-color: rgb(198, 159, 87) !important;
   color: rgb(198, 159, 87) !important;
 }
+
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(198, 159, 87)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
- }
+}
 
 /* ESTOS DOS DE ABAJO LE SACAN EL PADDING AL LOGIN Y REGISTRO EN DESKTOP
-PORQUE SINO EL FOOTER QUEDABA MUY ALTO */
-
-.s1{
+  PORQUE SINO EL FOOTER QUEDABA MUY ALTO */
+.s1 {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.s2{
+.s2 {
   padding-top: 0;
   padding-bottom: 0;
 }
+
 /* FIN DEL HEADER */
 
 /* INICIO IMAGENES  */
