@@ -6,7 +6,6 @@
 body {
   background-color: #313131;
     margin: 0 !important;
-
 }
 
 /* ACA EMPIEZA EL HEADER */
@@ -24,13 +23,13 @@ header {
   border-right: 1px solid white;
   padding-top: 17px;
   padding-bottom: 17px;
+  padding-right: 10px;
 }
 
 /* ESTILOS DE LA LISTA DE ITEMS DEL MENU */
 header nav div div a {
   font-size: 20px;
   color: white;
-  font-weight: 300;
   color: white !important;
 }
 
@@ -70,6 +69,11 @@ header nav div div a:hover {
   padding-bottom: 0;
 }
 
+@media (min-width: 678px){
+  .logReg{
+    text-align: left;
+  }
+}
 /* ACÁ TERMINA EL HEADER */
 /* ACÁ EMPIEZA EL MAIN */
 main {

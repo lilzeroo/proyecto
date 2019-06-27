@@ -18,24 +18,33 @@ header {
   font-family: 'Alegreya Sans', sans-serif;
 }
 
-/* HEADER borde de division de los 2 menus*/
+/* HEADER borde de division de los 2 menus */
 .primero {
   border-right: 1px solid white;
   padding-top: 17px;
   padding-bottom: 17px;
+  padding-right: 10px;
 }
 
 /* ESTILOS DE LA LISTA DE ITEMS DEL MENU */
 header nav div div a {
   font-size: 20px;
   color: white;
-  font-weight: 300;
   color: white !important;
 }
 
 header nav div div a:hover {
   font-weight: 700;
   color: #c69f57 !important;
+}
+
+.boton {
+  background-color: #313131;
+  border: #313131;
+}
+
+.boton img:hover {
+  background-color: #c69f57;
 }
 
 /* ESTOS DOS DE ABAJO LE CAMBIAN EL COLOR A LA HAMBURGUESA */
@@ -58,6 +67,12 @@ header nav div div a:hover {
 .s2 {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+@media (min-width: 678px){
+  .logReg{
+    text-align: left;
+  }
 }
 
 /* ACÁ TERMINA EL HEADER */

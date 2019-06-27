@@ -5,6 +5,7 @@
 
 body {
   background-color: #c69f57;
+  margin: 0 !important;
 
 }
 /*INICIO DEL HEADER*/
@@ -22,6 +23,7 @@ header {
   border-right: 1px solid white;
   padding-top: 17px;
   padding-bottom: 17px;
+  padding-right: 10px;
 }
 
 /* ESTILOS DE LA LISTA DE ITEMS DEL MENU */
@@ -67,6 +69,11 @@ header nav div div a:hover {
   padding-bottom: 0;
 }
 
+@media (min-width: 678px){
+  .logReg{
+    text-align: left;
+  }
+}
 /* FIN DEL HEADER */
 
 /* INICIO IMAGENES  */
@@ -329,7 +336,10 @@ footer a:hover{
 .btn-mio:hover{
   color: #e1e1e1;
 }
+
+
 /*MEDIA QUERIES*/
+
 @media only screen and (max-width: 560px) {
   nav {
     display: none;
