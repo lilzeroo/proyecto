@@ -14,6 +14,7 @@
 </head>
 
 <body >
+
   <header class="fixed-top">
     <nav class="container navbar navbar-dark navbar-expand-md ">
       <!-- LOGO MILA -->
@@ -44,7 +45,7 @@
 
   <main class="container-fluid">
     <h1>Registrate</h1>
-    <form action="index.html" method="post">
+    <form action="login.html" method="post">
 
       <div class="form-row justify-content-center justify-content-md-start">
         <div class="form-group col-md-3 offset-md-2 col-9">
@@ -53,25 +54,26 @@
         </div>
         <div class="form-group col-md-3 offset-md-2 col-9">
           <label for="apellido">Apellido:</label>
-          <input type="text" class="form-control" id="apellido" required="required">
+          <input type="text" class="form-control" id="apellido" required>
         </div>
         <div class="form-group col-md-3 offset-md-2 col-9">
-          <label for="nombre">Email:</label>
+          <label for="email">Email:</label>
           <input type="email" class="form-control" id="email" required>
         </div>
         <div class="form-group col-md-3 offset-md-2 col-9 ">
-          <label for="apellido">Edad:</label>
-          <input type="number" class="form-control" name="edad" min="18" max="99" step="1" required="required">
+          <label for="numero">Edad:</label>
+          <input type="number" class="form-control" id="numero"name="edad" min="18" max="99" step="1" required>
         </div>
         <div class="form-group col-md-3 offset-md-2  col-9">
-          <label for="apellido">Contraseña:</label>
+          <label for="pass">Contraseña:</label>
           <input type="password" class="form-control" id="pass" required>
         </div>
         <div class="form-group col-md-3 offset-md-2 col-9 ">
-          <label for="nombre">Verificar contraseña:</label>
+          <label for="verpass">Verificar contraseña:</label>
           <input type="password" class="form-control" id="verpass" required>
         </div>
-        <button onclick="window.location.href = 'login.html';" class="btn btn-mio form-group col-5 col-md-2 offset-md-5 " type="submit" name="button">Registrarme</button>
+        <button  class="btn btn-mio form-group col-5 col-md-2 offset-md-5 " type="submit" name="button">Registrarme</button>
+
       </div>
     </form>
   </main>
