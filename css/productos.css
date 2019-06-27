@@ -89,10 +89,15 @@ main{
 main h2{
   text-align: center;
   font-size: 50px;
-  border-bottom: 2px solid #c69f57;
-  margin-bottom: 30px;
-}
 
+}
+.borde{
+  border-bottom: 2px solid #c69f57;
+  width: 37%;
+  margin: 0 auto;
+  margin-top: 34px;
+  margin-bottom: 44px;
+}
 main h5{
     color: #c69f57;
     text-align: center;
@@ -111,7 +116,7 @@ main img{
   margin-bottom: 7px;
 }
 .prod{
-  margin-bottom:20px;
+  margin-bottom:100px;
 }
 /* ACA EMPIEZA EL FOOTER */
 footer {
@@ -171,6 +176,25 @@ footer a:hover {
 
 /* HOVER ICONOS BLANCOS */
 /* ACÁ TERMINA EL FOOTER */
+.btn-negro{
+  font-family: 'Alegreya Sans', sans-serif;
+  background-color: #313131;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #E1E1E1;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display:flex;
+  margin:0 auto;
+}
+.btn-negro:hover {
+  color: #c69f57;
+}
+.btn-negro:active{
+  background-color:#c69f57;
+  color: #313131;
+}
+
 
 .btn-mio {
   font-family: 'Alegreya Sans', sans-serif;
@@ -183,16 +207,15 @@ footer a:hover {
   display:flex;
   margin:0 auto;
 }
-
-
 .btn-mio:hover {
   color: #313131;
 }
 .btn-mio:active{
   background-color:#313131;
   color: #c69f57;
-
 }
+
+
 .form-check-input,
 .form-check-input:hover,
 .form-check-input:active {
@@ -232,9 +255,16 @@ footer a:hover {
 
 }
 .prod{
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 40px;
+  padding-top: 40px;
   margin-bottom:0px;
+}
+.borde{
+  border-bottom: 2px solid #c69f57;
+  width: 67%;
+  margin: 0 auto;
+  margin-top: 44px;
+  margin-bottom: 44px;
 }
 }
 @media (min-height: 1226px) {
