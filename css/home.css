@@ -303,6 +303,10 @@ footer a:hover{
   text-decoration: none;
 }
 
+.footer{
+  margin: 0 !important;
+}
+
 /* ICONOS DEL FOOTER */
 .icon-facebook2,
 .icon-twitter,
@@ -338,6 +342,8 @@ footer a:hover{
 }
 
 
+
+
 /*MEDIA QUERIES*/
 
 @media only screen and (max-width: 560px) {
@@ -369,4 +375,9 @@ footer a:hover{
   footer{
       width: 96%;
   }
+
+  footer {
+      bottom: 0;
+      position: relative;
+    }
 }
