@@ -4,8 +4,7 @@
 }
 
 body {
-  background-color: #313131;
-  margin: 0 !important;
+  background-color: #c69f57;
 
 }
 
@@ -251,12 +250,12 @@ textarea {
   margin-bottom: 3rem;
 }
 
-article .row {
+section .row {
   margin: auto;
   width: 50%;
 }
 
-article .row .espacio{
+section .row .espacio{
   margin-top: 15px;
 }
 /*FIN CONTACTO*/
@@ -265,10 +264,11 @@ article .row .espacio{
 footer{
   background-color: #c69f57;
   color: #313131;
-  width: 100%;
+  bottom:0;
   position: static;
-  bottom: 0px;
-  padding-bottom: 10px;
+  width: 98%;
+  padding-left: 22px;
+  height: 61px;
 }
 
 footer img{
@@ -296,13 +296,6 @@ footer a:hover{
   text-decoration: none;
 }
 
-.footer-copyright{
-  margin: 0;
-}
-.sas{
-  margin: 0 !important;
-  padding: 0 !important;
-}
 /* ICONOS DEL FOOTER */
 .icon-facebook2,
 .icon-twitter,
@@ -363,7 +356,7 @@ footer a:hover{
   .icon-twitter{
     display: none;
   }
-  .icon-facebook2 {
-    display: none;
+  footer{
+      width: 96%;
   }
 }
