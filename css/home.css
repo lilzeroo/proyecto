@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: #c69f57;
+  background-color: #313131;
+  margin: 0 !important;
 
 }
 
@@ -264,11 +265,10 @@ article .row .espacio{
 footer{
   background-color: #c69f57;
   color: #313131;
-  bottom:0;
+  width: 100%;
   position: static;
-  width: 98%;
-  padding-left: 22px;
-  height: 61px;
+  bottom: 0px;
+  padding-bottom: 10px;
 }
 
 footer img{
@@ -296,6 +296,13 @@ footer a:hover{
   text-decoration: none;
 }
 
+.footer-copyright{
+  margin: 0;
+}
+.sas{
+  margin: 0 !important;
+  padding: 0 !important;
+}
 /* ICONOS DEL FOOTER */
 .icon-facebook2,
 .icon-twitter,
@@ -356,7 +363,7 @@ footer a:hover{
   .icon-twitter{
     display: none;
   }
-  footer{
-      width: 96%;
+  .icon-facebook2 {
+    display: none;
   }
 }

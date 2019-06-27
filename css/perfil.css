@@ -5,6 +5,7 @@
 
   body{
     background-color: #313131;
+      margin: 0 !important;
   }
 
   /* ACA EMPIEZA EL HEADER */
@@ -103,8 +104,8 @@ ACÁ EMPIEZA EL FOOTER */
 footer{
   background-color: #c69f57;
   color: #313131;
-  bottom:0;
   position: fixed;
+  bottom:0;
   width: 100%;
   padding-bottom: 10px;
 }
@@ -133,7 +134,9 @@ footer a{
 footer a:hover{
   text-decoration: none;
 }
-
+.footer-copyright{
+  margin: 0;
+}
 /* ICONOS DEL FOOTER */
 .icon-facebook2,
 .icon-twitter,
@@ -190,8 +193,7 @@ footer a:hover{
   .icon-twitter{
     display: none;
   }
-   footer{
-     bottom:0;
-     position: relative;
-     }
+  .icon-facebook2 {
+    display: none;
+  }
    }

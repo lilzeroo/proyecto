@@ -5,7 +5,8 @@
 
 body {
   background-color: #313131;
-  color: white;
+    margin: 0 !important;
+
 }
 
 /* ACA EMPIEZA EL HEADER */
@@ -198,6 +199,9 @@ footer a:hover {
   }
 
   .icon-twitter {
+    display: none;
+  }
+  .icon-facebook2 {
     display: none;
   }
 }

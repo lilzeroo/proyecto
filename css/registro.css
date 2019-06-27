@@ -5,7 +5,8 @@
 
 body {
   background-color: #313131;
-}
+  margin: 0 !important;
+  }
 
 /* ACA EMPIEZA EL HEADER */
 /* ACÁ DEFINO COLOR, SOMBRAS Y FUENTE DEL HEADER */
@@ -65,8 +66,9 @@ main {
   padding-top: 114px;
   color: #c69f57;
   font-family: 'Noto Serif', serif;
-  z-index: 100;
+  width: 375px;
   position: relative;
+
 }
 
 main form label {
@@ -89,9 +91,9 @@ ACÁ EMPIEZA EL FOOTER */
 footer {
   background-color: #c69f57;
   color: #313131;
-  bottom: 0;
-  position: fixed;
   width: 100%;
+  position: fixed;
+  bottom: 0px;
   padding-bottom: 10px;
 }
 
@@ -119,6 +121,9 @@ footer a {
 footer a:hover {
   text-decoration: none;
 }
+.footer-copyright{
+  margin: 0;
+}
 
 /* ICONOS DEL FOOTER */
 .icon-facebook2,
@@ -139,6 +144,7 @@ footer a:hover {
 
 /* HOVER ICONOS BLANCOS */
 /* ACÁ TERMINA EL FOOTER */
+
 .btn-mio,
 .btn-mio:active {
   background-color: #c69f57;
@@ -160,7 +166,9 @@ footer a:hover {
 }
 
 @media (min-width: 100px) and (max-width: 767.98px) {
+
   .primero {
+
     border-right: none;
   }
 
@@ -179,7 +187,9 @@ footer a:hover {
   .icon-twitter {
     display: none;
   }
-
+  .icon-facebook2 {
+    display: none;
+  }
   footer {
     bottom: 0;
     position: relative;
