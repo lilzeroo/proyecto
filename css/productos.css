@@ -188,31 +188,14 @@ footer a:hover {
   margin:0 auto;
 }
 .btn-negro:hover {
-  color: #c69f57;
+  color: #e1e1e1;
+  background-color: #c69f57;
+
 }
 .btn-negro:active{
   background-color:#c69f57;
   color: #313131;
-}
 
-
-.btn-mio {
-  font-family: 'Alegreya Sans', sans-serif;
-  background-color: #c69f57;
-  border-radius: 8px;
-  font-size: 20px;
-  color: #E1E1E1;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  display:flex;
-  margin:0 auto;
-}
-.btn-mio:hover {
-  color: #313131;
-}
-.btn-mio:active{
-  background-color:#313131;
-  color: #c69f57;
 }
 
 
