@@ -251,12 +251,12 @@ textarea {
   margin-bottom: 3rem;
 }
 
-section .row {
+article .row {
   margin: auto;
   width: 50%;
 }
 
-section .row .espacio{
+article .row .espacio{
   margin-top: 15px;
 }
 /*FIN CONTACTO*/
