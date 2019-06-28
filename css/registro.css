@@ -6,7 +6,7 @@
 body {
   background-color: #313131;
   margin: 0 !important;
-  }
+}
 
 /* ACA EMPIEZA EL HEADER */
 /* ACÁ DEFINO COLOR, SOMBRAS Y FUENTE DEL HEADER */
@@ -69,8 +69,8 @@ header nav div div a:hover {
   padding-bottom: 0;
 }
 
-@media (min-width: 678px){
-  .logReg{
+@media (min-width: 678px) {
+  .logReg {
     text-align: left;
   }
 }
@@ -83,7 +83,6 @@ main {
   font-family: 'Noto Serif', serif;
   width: 100%;
   position: relative;
-
 }
 
 main form label {
@@ -136,7 +135,8 @@ footer a {
 footer a:hover {
   text-decoration: none;
 }
-.footer{
+
+.footer {
   margin: 0 !important;
 }
 
@@ -159,7 +159,6 @@ footer a:hover {
 
 /* HOVER ICONOS BLANCOS */
 /* ACÁ TERMINA EL FOOTER */
-
 .btn-mio,
 .btn-mio:active {
   background-color: #c69f57;
@@ -181,9 +180,7 @@ footer a:hover {
 }
 
 @media (min-width: 100px) and (max-width: 767.98px) {
-
   .primero {
-
     border-right: none;
   }
 
@@ -202,12 +199,16 @@ footer a:hover {
   .icon-twitter {
     display: none;
   }
+
   .icon-facebook2 {
     display: none;
   }
-    footer {
-      bottom: 0;
-      position: relative;
 
-    }
+  footer {
+    bottom: 0;
+    position: relative;
+  }
+  .logReg {
+      text-align: center;
+  }
 }

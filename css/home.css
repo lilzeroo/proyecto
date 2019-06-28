@@ -69,6 +69,10 @@ header nav div div a:hover {
   padding-bottom: 0;
 }
 
+  .logReg{
+    text-align: left;
+  }
+}
 
 /* FIN DEL HEADER */
 
@@ -385,10 +389,7 @@ footer a:hover{
       position: relative;
     }
 
-}
-
-@media (min-width: 678px) and (max-width: 767.98px){
-  .logReg{
-    text-align: left;
+  .logReg {
+      text-align: center;
   }
 }

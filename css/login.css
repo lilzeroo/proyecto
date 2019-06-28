@@ -5,7 +5,7 @@
 
 body {
   background-color: #313131;
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 /* ACA EMPIEZA EL HEADER */
@@ -69,11 +69,12 @@ header nav div div a:hover {
   padding-bottom: 0;
 }
 
-@media (min-width: 678px){
-  .logReg{
+@media (min-width: 678px) {
+  .logReg {
     text-align: left;
   }
 }
+
 /* ACÁ TERMINA EL HEADER */
 /* ACÁ EMPIEZA EL MAIN */
 main {
@@ -110,8 +111,8 @@ main button {
   font-family: 'Alegreya Sans', sans-serif;
   margin-top: 20px;
 }
-/* ACÁ TERMINA EL MAIN */
 
+/* ACÁ TERMINA EL MAIN */
 /* ACÁ EMPIEZA EL FOOTER */
 footer {
   background-color: #c69f57;
@@ -163,8 +164,8 @@ footer a:hover {
   padding: 5PX;
   text-decoration: none;
 }
-/* ACÁ TERMINA EL FOOTER */
 
+/* ACÁ TERMINA EL FOOTER */
 .btn-mio,
 .btn-mio:active {
   background-color: #c69f57;
@@ -205,7 +206,11 @@ footer a:hover {
   .icon-twitter {
     display: none;
   }
+
   .icon-facebook2 {
     display: none;
+  }
+  .logReg {
+    text-align: center;
   }
 }
