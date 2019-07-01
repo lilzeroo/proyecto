@@ -6,9 +6,12 @@
 body {
   background-color: #e1e1e1;
   margin: 0 !important;
+  background-image: url(../images/texturacopas.png);
+  background-size: 5px;
+
 }
 
-/* ACA EMPIEZA EL HEADER */
+/* ACA EMPIEZA EL HEADER --------------------------------- */
 /* ACÁ DEFINO COLOR, SOMBRAS Y FUENTE DEL HEADER */
 header {
   background-color: #313131;
@@ -74,54 +77,73 @@ header nav div div a:hover {
     text-align: left;
   }
 }
-/* ACÁ TERMINA EL HEADER */
+/* ACÁ TERMINA EL HEADER------------------------------- */
 
 
-/* ACÁ EMPIEZA EL MAIN */
+/* ACÁ EMPIEZA EL MAIN--------------------------------- */
 main {
-
-  color: #c69f57;
+  color: #313131;
   font-family: 'Noto Serif', serif;
-  background-color: #e1e1e1;
   max-width: 50%;
   margin: 144px auto;
 }
 
 .prueba{
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #c69f57;
+  border-bottom: 1px solid #c69f57;
   float: left;
   padding: 10px 0;
-
+  margin-bottom: 15px;
 }
-
 
 h1{
   text-align: center;
+  margin-bottom: 30px;
+  color: #c69f57;
+}
+
+
+main section .nombreVino{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bolder;
+  margin-left: 36px;
+  float: left;
+  margin-bottom: 0;
+
+}
+
+main section .nombrePrecio{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bolder;
+  float: right;
+  margin-bottom: 0;
 }
 
 main img{
   max-width: 15px;
-float: left;
+  float: left;
 }
 
 main .titulo{
   float: left;
   margin: 0;
   margin-top: 18px;
-  margin-left: 10px;
-
+  margin-left: 20px;
 }
 
 main .precio{
   margin: 0;
   margin-top: 18px;
   text-align: right;
-
 }
 
-main button {
+main .detalles2{
   float: right;
+  text-align: right;
+  width: 100%;
+}
+main button {
+float: right;
   font-family: 'Alegreya Sans', sans-serif;
   background-color: #313131 !important;
   border-radius: 8px !important;
@@ -130,7 +152,18 @@ main button {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
   margin-left: 10px;
-  margin-top: 10px;
+}
+
+main button:hover{
+  background-color: #c69f57 !important;
+}
+
+main .importante{
+  float: left;
+  text-align: center;
+  font-family: 'Alegreya Sans', sans-serif;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 
 
@@ -141,10 +174,26 @@ main button {
   }
 }
 
+@media (min-width: 100px) and (max-width: 767.98px){
+  main{
+    max-width: 90% !important;
+  }
+  main .importante{
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 370px){
+  main .seguirComprando{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 
 
-/* ACÁ TERMINA EL MAIN */
-/* ACÁ EMPIEZA EL FOOTER */
+/* ACÁ TERMINA EL MAIN ---------------------------------*/
+
+/* ACÁ EMPIEZA EL FOOTER --------------------------------- */
 footer {
   background-color: #c69f57;
   color: #313131;
@@ -195,8 +244,8 @@ footer a:hover {
   padding: 5PX;
   text-decoration: none;
 }
+/* ACÁ TERMINA EL FOOTER ---------------------------------*/
 
-/* ACÁ TERMINA EL FOOTER */
 .btn-mio,
 .btn-mio:active {
   background-color: #c69f57;
