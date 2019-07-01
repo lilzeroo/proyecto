@@ -80,7 +80,10 @@ header nav div div a:hover {
 /* ACÁ TERMINA EL HEADER */
 
 
-
+.row div {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
 main {
   padding-top: 162px;
   color: #313131;
