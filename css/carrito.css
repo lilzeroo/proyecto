@@ -4,10 +4,8 @@
 }
 
 body {
+  background-color: #e1e1e1;
   margin: 0 !important;
-  background-color: #E1E1E1;
-  background-image: url(../images/texturacopas.png);
-  background-repeat: space;
 }
 
 /* ACA EMPIEZA EL HEADER */
@@ -76,62 +74,83 @@ header nav div div a:hover {
     text-align: left;
   }
 }
-
 /* ACÁ TERMINA EL HEADER */
 
 
+/* ACÁ EMPIEZA EL MAIN */
 main {
-  padding-top: 162px;
-  color: #313131;
-  font-family: 'Noto Serif', serif;
-  width: 100%;
-  position: relative;
-}
 
-main h2 {
-  text-align: center;
-  font-size: 50px;
-}
-
-.borde {
-  border-bottom: 2px solid #c69f57;
-  width: 37%;
-  margin: 0 auto;
-  margin-top: 34px;
-  margin-bottom: 44px;
-}
-
-main h5 {
   color: #c69f57;
-  text-align: center;
-  font-size: 30px;
-}
-
-main p {
-  margin-bottom: 0px;
-  color: #313131;
-  font-size: 40px;
-  text-align: center;
   font-family: 'Noto Serif', serif;
+  background-color: #e1e1e1;
+  max-width: 50%;
+  margin: 144px auto;
 }
 
-main img {
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 7px;
+.prueba{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  float: left;
+  padding: 10px 0;
+
 }
 
-.prod {
-  margin-bottom: 100px;
+
+h1{
+  text-align: center;
 }
 
-/* ACA EMPIEZA EL FOOTER */
+main img{
+  max-width: 15px;
+float: left;
+}
+
+main .titulo{
+  float: left;
+  margin: 0;
+  margin-top: 18px;
+  margin-left: 10px;
+
+}
+
+main .precio{
+  margin: 0;
+  margin-top: 18px;
+  text-align: right;
+
+}
+
+main button {
+  float: right;
+  font-family: 'Alegreya Sans', sans-serif;
+  background-color: #313131 !important;
+  border-radius: 8px !important;
+  font-size: 20px !important;
+  color: #E1E1E1 !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+
+@media (min-width: 768px){
+.col-md-3 {
+    max-width: 100%;
+  }
+}
+
+
+
+/* ACÁ TERMINA EL MAIN */
+/* ACÁ EMPIEZA EL FOOTER */
 footer {
   background-color: #c69f57;
   color: #313131;
+  bottom: 0;
+  position: fixed;
   width: 100%;
-  position: relative;
-  bottom: 0px;
   padding-bottom: 10px;
 }
 
@@ -160,10 +179,6 @@ footer a:hover {
   text-decoration: none;
 }
 
-.footer {
-  margin: 0 !important;
-}
-
 /* ICONOS DEL FOOTER */
 .icon-facebook2,
 .icon-twitter,
@@ -181,28 +196,19 @@ footer a:hover {
   text-decoration: none;
 }
 
-/* HOVER ICONOS BLANCOS */
 /* ACÁ TERMINA EL FOOTER */
-.btn-negro {
-  font-family: 'Alegreya Sans', sans-serif;
-  background-color: #313131;
+.btn-mio,
+.btn-mio:active {
+  background-color: #c69f57;
   border-radius: 8px;
-  font-size: 20px;
-  color: #E1E1E1;
+  font-size: 27px;
+  color: #313131;
   padding-top: 0px;
   padding-bottom: 0px;
-  display: flex;
-  margin: 0 auto;
 }
 
-.btn-negro:hover {
+.btn-mio:hover {
   color: #e1e1e1;
-  background-color: #c69f57;
-}
-
-.btn-negro:active {
-  background-color: #c69f57;
-  color: #313131;
 }
 
 .form-check-input,
@@ -235,36 +241,7 @@ footer a:hover {
   .icon-facebook2 {
     display: none;
   }
-
-  main {
-    padding-top: 122px;
-  }
-
-  .colorxs {
-    background-color: rgba(189, 189, 189, 0.5);
-  }
-
-  .prod {
-    padding-bottom: 40px;
-    padding-top: 40px;
-    margin-bottom: 0px;
-  }
-
-  .borde {
-    border-bottom: 2px solid #c69f57;
-    width: 67%;
-    margin: 0 auto;
-    margin-top: 44px;
-    margin-bottom: 44px;
-  }
   .logReg {
-      text-align: center;
-  }
-}
-
-@media (min-height: 1226px) {
-  footer {
-    position: fixed;
-    bottom: 0;
+    text-align: center;
   }
 }
