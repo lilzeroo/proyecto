@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+z<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -105,17 +105,19 @@
       <form action="home.html" method="post">
         <fieldset>
           <legend>Complete los campos para enviar el formulario</legend>
+          <div class="centrar">
           <label for="lbl_nombre" name="lbl_nombre">Su Nombre:</label>
-          <input type="text" name="nombre" placeholder=" Ingrese su nombre">
+          <input type="text" name="nombre" placeholder=" Ingrese su nombre" required>
           <label for="lbl_apellido" name="lbl_apellido">Su Apellido:</label>
-          <input type="text" name="apellido" placeholder=" Ingrese su apellido">
+          <input type="text" name="apellido" placeholder=" Ingrese su apellido" required>
           <label for="lbl_correo" name="lbl_correo">Su Email:</label>
-          <input type="email" name="correo" placeholder=" Ingrese su email">
+          <input type="email" name="correo" placeholder=" Ingrese su email" required>
           <label for="lbl_telefono" name="lbl_telefono">Su Teléfono:</label>
-          <input type="tel" name="telefono" placeholder=" Ingrese su teléfono">
+          <input type="tel" name="telefono" placeholder=" Ingrese su teléfono" required>
           <label for="lbl_mensaje" name="lbl_mensaje">Su Mensaje:</label>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="4" maxlength="251" placeholder=" Ingrese su mensaje"></textarea>
-          <button onclick="window.location.href = '#';" class="btn btn-mio form-group col-7 col-md-2 " type="submit" name="entrar">Enviar</button>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="4" maxlength="251" placeholder=" Ingrese su mensaje" required></textarea>
+        </div>
+          <button onclick="window.location.href = '#';" class="btn btn-mio form-group col-10 col-md-4 " type="submit" name="entrar">Enviar</button>
         </fieldset>
       </form>
       <h2>Estamos aquí</h2>

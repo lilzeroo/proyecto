@@ -85,10 +85,6 @@ main {
   position: relative;
 }
 
-main form label {
-  font-size: 22px;
-}
-
 main h1 {
   text-align: center;
   font-size: 60px;
@@ -100,21 +96,92 @@ main button {
 }
 
 main {
+  margin: auto;
+  overflow: hidden;
+  background-color: #e1e1e1;
+  background-image: url(../images/textura-copas.png);
+  background-image: repeating-linear-gradient(20);
+}
+
+.ppal {
   max-width: 600px;
   margin: auto;
   overflow: hidden;
+  background-color: #e1e1e1;
+  background-image: url(../images/textura-copas.png);
+  background-image: repeating-linear-gradient(20);
 }
 
-.stark {
-  width: 200px;
-  border-radius: 200px;
+.detalle {
+  min-width: 500px;
+  max-width: 700px;
+  height: 380px;
+  border: red 1px solid;
+  margin: 10px 10px 0;
+}
+.detalle h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #313131;
+  margin-top: 15px;
+}
+.detalle hr {
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-top: 18px;
+  border: 1px solid #c69f57;
+}
+
+main .ppal .detalle .botella {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+main .ppal .detalle .botella img {
+  width: 66px;
   float: left;
 }
 
-.texto-perfil {
-  padding-top: 40px;
-  padding-left: 240px;
-  color: white;
+.botella-anio h1 {
+  float: left;
+  margin-left: 40px;
+  margin-top: 1px;
+  color: #c69f57;
+  font-size: 50px;
+}
+
+.botella-varietal h1 {
+  float: left;
+  margin-left: -113px;
+  margin-top: 23px;
+  color: #c69f57;
+  font-size: 58px;
+  text-transform: uppercase;
+} 
+
+.botella-descripcion p {
+  float: left;
+  margin-left: 40px;
+  margin-top: -7px;
+  max-width: 312px;
+  color: #313131;
+  font-size: 9px;
+}
+
+.botella-precio {
+  border-right: 4px solid #313131;
+  height: 60px;
+  margin-top: 158px;
+  width: 310px;
+}
+
+.botella-precio h2 {
+  float: left;
+  margin-left: 40px;
+  margin-top: -21px;
+  max-width: 300px;
+  color: #313131;
+  font-size: 50px;
 }
 
 /* ACÁ TERMINA EL MAIN
@@ -226,15 +293,6 @@ footer a:hover {
   }
 }
 @media (min-width: 100px) and (max-width: 500.00px) {
-  .perfil-responsive {
-    max-width: 200px;
-    margin: 0 auto;
-  }
-  .texto-perfil {
-    padding-top: 3px;
-    padding-left: 0px;
-    color: white;
-  }
   h1 {
     margin: 0 auto;
     padding: 5px;
@@ -246,14 +304,6 @@ footer a:hover {
     margin: 0 auto;
     max-width: 500px;
     width: 200px;
-  }
-  main div img {
-    width: 100%;
-  }
-  .perfil-responsive {
-    box-sizing: border-box;
-    width: 300px;
-    height: 530px;
   }
   .btn-mio,
   .btn-mio:active {

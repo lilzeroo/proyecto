@@ -223,11 +223,16 @@ form label {
   background-color: #c69f57;
   color: #333333;
 }
+.centrar {
+  margin: 0 auto;
+  width: 80%;
+}
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-  padding: 1px;
+  padding: 2px;
+  max-width: 480px;
   display: block;
   width: 100%;
   background-color: #e1e1e1;
@@ -236,8 +241,13 @@ textarea {
   border:none;
   border-radius: .5rem;
   color:#313131;
+  margin-left: 1px;
 }
-
+fieldset label {
+  width: 100px;
+  display: block;
+  text-align: left;
+}
 .row-fluid {
   position: relative;
   padding-bottom: 56.25%;
