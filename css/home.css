@@ -73,24 +73,17 @@ header nav div div a:hover {
   text-align: left;
 }
 }
-
 /* FIN DEL HEADER */
+
 /* INICIO IMAGENES  */
-section .carousel {
+body .fotos  {
   margin-top: 100px !important;
 }
 
 #carouselExampleControls {
   z-index: 1;
   max-width: 100%;
-}
-
-.carousel-control-prev {
-  margin-top: 100px;
-}
-
-.carousel-control-next {
-  margin-top: 100px;
+  margin-top: 74px !important;
 }
 
 /* FIN DE IMAGENES  */
@@ -393,6 +386,16 @@ footer a:hover {
   header {
     background-color: none;
   }
+
+form{
+  width: 90%;
+}
+.mapa{
+  width: 100%;
+  border: none;
+  padding: 0;
+}
+
 }
 
 @media (min-width: 100px) and (max-width: 767.98px) {
