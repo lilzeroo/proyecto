@@ -72,12 +72,31 @@ header nav div div a:hover {
 .logReg {
   text-align: left;
 }
+
+
+.btn-primary{
+  background-color: #313131;
+  border-color: #313131;
 }
-/* FIN DEL HEADER */
+
+.btn-primary:hover{
+  background-color: #c69f57;
+  border-color: #c69f57;
+}
+
+.btn-secondary{
+  background-color: #313131;
+  border-color: #313131;
+}
+
+.btn-secondary:hover{
+  background-color: #c69f57;
+  border-color: #c69f57;
+}
 
 /* INICIO IMAGENES  */
 body .fotos  {
-  margin-top: 100px !important;
+  margin-top: 78px !important;
 }
 
 #carouselExampleControls {

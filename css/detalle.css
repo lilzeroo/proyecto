@@ -74,6 +74,25 @@ header nav div div a:hover {
     text-align: left;
   }
 }
+.btn-primary{
+  background-color: #313131;
+  border-color: #313131;
+}
+
+.btn-primary:hover{
+  background-color: #c69f57;
+  border-color: #c69f57;
+}
+
+.btn-secondary{
+  background-color: #313131;
+  border-color: #313131;
+}
+
+.btn-secondary:hover{
+  background-color: #c69f57;
+  border-color: #c69f57;
+}
 
 /* ACÁ TERMINA EL HEADER */
 /* ACÁ EMPIEZA EL MAIN */
@@ -157,7 +176,7 @@ main .ppal .detalle .botella img {
   color: #c69f57;
   font-size: 58px;
   text-transform: uppercase;
-} 
+}
 
 .botella-descripcion p {
   float: left;

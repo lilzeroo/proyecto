@@ -33,7 +33,7 @@ z<!DOCTYPE html>
         <div class="logReg">
           <a class="nav-item nav-link s1" href="login.html">LOGIN</a>
           <a class="nav-item nav-link s2" href="registro.html">REGISTRO</a>
-          <a class="nav-item nav-link s2" href="carrito.html">
+          <a data-toggle="modal" data-target="#basicExampleModal" class="nav-item nav-link s2" href="carrito.html">
             <span class="icon-cart"></span>
           </a>
         </div>
@@ -41,7 +41,28 @@ z<!DOCTYPE html>
     </nav>
   </header>
 
-
+  <!-- Modal -->
+  <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Carrito de compras</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button onclick="window.location.href = 'carrito.html';" type="button" class="btn btn-primary">Ver carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
 
   <section class="fotos">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -74,33 +95,10 @@ z<!DOCTYPE html>
       <p class="subtitulo">El continuo esfuerzo por progresar, el equipo de trabajo, la innovación, la inversión en tecnología y la constante búsqueda por alcanzar la máxima expresión de los vinos que identifican las virtudes de nuestro terroir, han
         logrado que Mila Wine sea reconocida por brindar al mercado vinos de excelente calidad, personalidad, carácter y estilo propio.</p>
     </article>
-  </section>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
-    Launch demo modal
-  </button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
+
+
   <section id="faqs">
     <div class="faq">
       <h2>F.A.Q Preguntas frecuentes</h2>
