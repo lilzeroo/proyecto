@@ -98,7 +98,10 @@ main button {
   font-family: 'Alegreya Sans', sans-serif;
   margin-top: 20px;
 }
-
+.ve{
+  font-size: 21px;
+  padding: 0;
+}
 /* ACÁ TERMINA EL MAIN
 
 ACÁ EMPIEZA EL FOOTER */
