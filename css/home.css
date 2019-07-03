@@ -344,9 +344,12 @@ footer img {
 
 h5 {
   padding-top: 20px;
-  padding-left: 10px;
   color: #313131;
   font-size: 14px;
+}
+
+footer .iconos{
+  margin-top: 16px;
 }
 
 footer a {
@@ -414,7 +417,6 @@ form{
   border: none;
   padding: 0;
 }
-
 }
 
 @media (min-width: 100px) and (max-width: 767.98px) {
@@ -430,18 +432,6 @@ form{
     padding-top: 10px;
   }
 
-  .icon-instagram {
-    display: none;
-  }
-
-  .icon-twitter {
-    display: none;
-  }
-
-  .icon-facebook2 {
-    display: none;
-  }
-
   footer {
     bottom: 0;
     position: relative;
@@ -449,5 +439,17 @@ form{
 
   .logReg {
     text-align: center;
+  }
+}
+
+@media (max-width: 326px){
+  footer img {
+    border: none;
+  }
+}
+
+@media (min-width: 325px) and (max-width: 413px) {
+  footer .iconos{
+    margin-top: 0;
   }
 }

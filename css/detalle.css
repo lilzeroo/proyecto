@@ -230,6 +230,10 @@ h5 {
   font-size: 14px;
 }
 
+footer .iconos{
+  margin-top: 16px;
+}
+
 footer a {
   margin-top: 16px;
   margin-left: 10px;
@@ -296,17 +300,6 @@ footer a:hover {
     padding-top: 10px;
   }
 
-  .icon-instagram {
-    display: none;
-  }
-
-  .icon-twitter {
-    display: none;
-  }
-
-  .icon-facebook2 {
-    display: none;
-  }
   .logReg {
       text-align: center;
   }
@@ -333,5 +326,16 @@ footer a:hover {
     padding-top: 0px;
     padding-bottom: 0px;
     width: max-content;
+  }
+}
+@media (max-width: 326px){
+  footer img {
+    border: none;
+  }
+}
+
+@media (min-width: 325px) and (max-width: 413px) {
+  footer .iconos{
+    margin-top: 0;
   }
 }
