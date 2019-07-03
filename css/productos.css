@@ -72,12 +72,10 @@ header nav div div a:hover {
   padding-top: 0;
   padding-bottom: 0;
 }
-
-@media (min-width: 678px){
   .logReg{
     text-align: left;
   }
-}
+
 /* ACÁ TERMINA EL HEADER */
 main{
   padding-top: 162px;
@@ -222,6 +220,9 @@ footer a:hover {
   margin-top: 7px;
 }
 
+
+
+/* MEDIA QUERY PARA CELULARES */
 @media (min-width: 100px) and (max-width: 575px) {
 
   .primero {
@@ -270,7 +271,14 @@ footer a:hover {
     max-width: 100%;
 
 }
+.logReg{
+  text-align: center;
 }
+}
+
+
+
+/* MEDIA QUERY PARA TABLETS */
 @media (min-width: 575px) and (max-width: 767.98px) {
   .container{
       max-width: 100%;
@@ -285,9 +293,25 @@ footer a:hover {
     background-color: rgba(189, 189, 189, 0.5);
     max-width: 100%;
   }
+  .primero {
 
+    border-right: none;
+  }
+
+  .s1 {
+    margin-top: -17px;
+  }
+
+  .s2 {
+    padding-top: 10px;
+  }
+  .logReg{
+    text-align: center;
+  }
 }
 
+
+/* MEDIA QUERY PARA PANTALLAS GRANDES */
 @media (min-height: 1226px) {
     footer{
       position: fixed;
