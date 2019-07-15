@@ -17,6 +17,9 @@ $usuarioLogueado = traerUsuarioLogueado();
   <link rel="stylesheet" href="css/detalle.css">
   <link rel="stylesheet" href="fonts/iconos.css">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Noto+Serif&display=swap" rel="stylesheet">
+
+
+
   <!-- font-family: 'Alegreya Sans', sans-serif;
     font-family: 'Noto Serif', serif; -->
 </head>
@@ -71,7 +74,7 @@ $usuarioLogueado = traerUsuarioLogueado();
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button onclick="window.location.href = 'carrito.html';" type="button" class="btn btn-primary">Ver carrito</button>
+          <button onclick="window.location.href = 'carrito.php';" type="button" class="btn btn-primary">Ver carrito</button>
         </div>
       </div>
     </div>
@@ -97,9 +100,9 @@ $usuarioLogueado = traerUsuarioLogueado();
         <div class="comprar-volver">
           <div class="precio-comprar">
             <h5 class="precio">$759</h5>
-            <button onclick="window.location.href = 'carrito.html';" class="btn btn-negro" type="button" name="button">COMPRAR</button>
+            <button onclick="window.location.href = 'carrito.php';" class="btn btn-negro" type="button" name="button">COMPRAR</button>
           </div>
-          <button onclick="window.location.href = 'productos.html';" class="btn btn-transparente" type="button" name="button">VOLVER</button>
+          <button onclick="window.location.href = 'productos.php';" class="btn btn-transparente" type="button" name="button">VOLVER</button>
         </div>
 
       </article>

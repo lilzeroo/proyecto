@@ -44,7 +44,7 @@ $usuarioLogueado = traerUsuarioLogueado();
               <a class="nav-item nav-link s1" href="login.php">LOGIN</a>
               <a class="nav-item nav-link s2" href="registro.php">REGISTRO</a>
               <?php endif; ?>
-              <a class="nav-item nav-link s2" href="#">
+              <a data-toggle="modal" data-target="#basicExampleModal"  class="nav-item nav-link s2" href="#">
                 <span class="icon-cart"></span>
               </a>
             </div>
@@ -52,33 +52,55 @@ $usuarioLogueado = traerUsuarioLogueado();
         </nav>
       </header>
 
+      <!-- Modal -->
+      <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Carrito de compras</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button onclick="window.location.href = 'carrito.php';" type="button" class="btn btn-primary">Ver carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+
 <main class="container">
 <h2>NUESTROS PRODUCTOS</h2>
 <div class="borde"></div>
   <div class="row">
     <div class="col-12 col-md-4 col-sm-6 col-lg-3 ml-auto mr-auto prod">
-      <a href="#"><img src="images/botella.png" alt="Botella" width="60"></a>
+      <a href="detalle.php"><img src="images/botella.png" alt="Botella" width="60"></a>
       <h5>2017 <br> <b>MALBEC</b></h5>
       <p><b>$980</b></p>
-      <button  class="btn btn-negro" type="button" name="button">COMPRAR</button>
+      <button class="btn btn-negro" type="button" name="button">COMPRAR</button>
     </div>
 
     <div class="col-12 col-md-4 col-sm-6 col-lg-3 ml-auto mr-auto prod colorxs">
-      <a href="#"><img src="images/botella.png" alt="Botella" width="60"></a>
+      <a href="detalle.php"><img src="images/botella.png" alt="Botella" width="60"></a>
       <h5>2014 <br> <b>CABERNET</b></h5>
       <p><b>$1100</b></p>
       <button  class="btn btn-negro" type="button" name="button">COMPRAR</button>
     </div>
 
     <div class="col-12 col-md-4 col-sm-6 col-lg-3 ml-auto mr-auto prod clrtablet">
-      <a href="#"><img src="images/botella.png" alt="Botella" width="60"></a>
+      <a href="detalle.php"><img src="images/botella.png" alt="Botella" width="60"></a>
       <h5>2015 <br> <b>MERLOT</b></h5>
       <p><b>$1250</b></p>
       <button  class="btn btn-negro" type="button" name="button">COMPRAR</button>
     </div>
 
     <div class="col-12 col-md-4 col-sm-6 col-lg-3 ml-auto mr-auto prod colorxs clrtablet">
-      <a href="#"><img src="images/botella.png" alt="Botella" width="60"></a>
+      <a href="detalle.php"><img src="images/botella.png" alt="Botella" width="60"></a>
       <h5>2015 <br> <b>CHIANTI</b></h5>
       <p><b>$2500</b></p>
       <button  class="btn btn-negro" type="button" name="button">COMPRAR</button>
@@ -88,52 +110,42 @@ $usuarioLogueado = traerUsuarioLogueado();
     <!-- <div class="w-100"></div> -->
 
     <div class="col-12 col-md-4 col-sm-6 col-lg-3 ml-auto mr-auto prod">
-      <a href="#"><img src="images/botella.png" alt="Botella" width="60"></a>
+      <a href="detalle.php"><img src="images/botella.png" alt="Botella" width="60"></a>
       <h5>2016 <br> <b>MERLOT </b></h5>
       <p><b>$1100</b></p>
       <button  class="btn btn-negro" type="button" name="button">COMPRAR</button>
     </div>
 
     <div class="col-12 col-md-4 col-sm-6 col-lg-3 ml-auto mr-auto prod colorxs">
-      <a href="#"><img src="images/botella.png" alt="Botella" width="60"></a>
+      <a href="detalle.php"><img src="images/botella.png" alt="Botella" width="60"></a>
       <h5>2017 <br> <b>MALBEC</b></h5>
       <p><b>$1000</b></p>
       <button  class="btn btn-negro" type="button" name="button">COMPRAR</button>
     </div>
     <div class="col-12 col-md-4 col-sm-6 col-lg-3 ml-auto mr-auto prod clrtablet">
-      <a  href="#"><img src="images/botella.png" alt="Botella" width="60"></a>
+      <a  href="detalle.php"><img src="images/botella.png" alt="Botella" width="60"></a>
       <h5>2018 <br> <b>BONARDA</b></h5>
       <p><b>$800</b></p>
       <button  class="btn btn-negro" type="button" name="button">COMPRAR</button>
     </div>
 
     <div class="col-12  col-md-4 col-sm-6 col-lg-3 ml-auto mr-auto prod colorxs clrtablet">
-      <a href="#"><img src="images/botella.png" alt="Botella" width="60"></a>
+      <a href="detalle.php"><img src="images/botella.png" alt="Botella" width="60"></a>
       <h5>2013 <br> <b>MALBEC</b></h5>
       <p><b>$1600</b></p>
       <button  class="btn btn-negro" type="button" name="button">COMPRAR</button>
     </div>
 
     <div class="col-12  col-md-4 col-sm-6 col-lg-3 ml-auto mr-auto prod d-none d-md-block d-lg-none">
-      <a href="#"><img src="images/botella.png" alt="Botella" width="60"></a>
+      <a href="detalle.php"><img src="images/botella.png" alt="Botella" width="60"></a>
       <h5>2015 <br> <b>MALBEC</b></h5>
       <p><b>$1100</b></p>
       <button  class="btn btn-negro" type="button" name="button">COMPRAR</button>
     </div>
   </div>
-
-
-
-
-
-
-
 </main>
 
-
-
-
-      <footer>
+    <footer>
         <div class="footer row justify-content-center">
           <img src="images/logoMila2.png" alt="logo">
           <h5>Todos los derechos reservados 2019</h5>

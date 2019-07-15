@@ -75,7 +75,28 @@ header nav div div a:hover {
   .logReg{
     text-align: left;
   }
+}
 
+/* MODAL */
+.btn-primary{
+  background-color: RED;
+  border-color: #313131;
+}
+
+.btn-primary:hover{
+  background-color: #c69f57;
+  border-color: #c69f57;
+}
+
+.btn-secondary{
+  background-color: #313131;
+  border-color: #313131;
+}
+
+.btn-secondary:hover{
+  background-color: #c69f57;
+  border-color: #c69f57;
+}
 /* ACÁ TERMINA EL HEADER */
 main{
   padding-top: 162px;
