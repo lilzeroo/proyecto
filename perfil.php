@@ -60,7 +60,9 @@ $usuarioLogueado = traerUsuarioLogueado();
       <h1>Perfil</h1>
       <img src="images/tony.png" alt="Foto de Perfil" class="stark">
       <div class="col-12 texto-perfil">
-        <h3>Tony Stark</h3> <h3>tony@starkindustries.com</h3> <h3>***********</h3>
+        <?php if ($usuarioLogueado != null) : ?>
+          <h3 class="title"><?= $usuarioLogueado["nombre"]. " " .$usuarioLogueado["apellido"]. "<br>" .$usuarioLogueado["email"]?></h3>
+        <?php endif; ?>
       </div>
       <button onclick="window.location.href = 'login.html';" class="btn btn-mio form-group" type="submit" name="button">Modificar Contraseña</button>
     </div>
