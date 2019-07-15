@@ -4,8 +4,10 @@
 }
 
 body {
-  background-color: #313131;
-  margin: 0 !important;
+  background-color: #e1e1e1;
+  background-image: url(../images/texturacopas.png);
+  background-image: repeating-linear-gradient(20);
+
 }
 
 /* ACA EMPIEZA EL HEADER */
@@ -93,10 +95,120 @@ header nav div div a:hover {
   background-color: #c69f57;
   border-color: #c69f57;
 }
-
 /* ACÁ TERMINA EL HEADER */
 /* ACÁ EMPIEZA EL MAIN */
-main {
+
+main{
+  max-width: 100%;
+  overflow: hidden;
+  display: block !important;
+
+}
+
+main section{
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 160px;
+}
+
+main section h1{
+  font-family: 'Noto Serif', serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.borde{
+  border-bottom: 2px solid #c69f57;
+  width: 37%;
+  margin: 0 auto;
+  margin-top: 34px;
+  margin-bottom: 44px;
+}
+
+.product-detail img{
+  width: 100px;
+}
+
+
+.product-detail{
+  display: flex;
+  flex-direction: column;
+}
+
+article h3{
+  font-family: 'Noto Serif', serif;
+  font-size: 100px;
+  color: #c69f57;
+  line-height: 85px;
+  max-width: 50%;
+}
+
+section p{
+  max-width: 70%;
+  float: left;
+}
+
+.comprar-volver{
+  display: flex;
+}
+
+section .precio-comprar{
+  max-width: 200px;
+  border-right: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+section .precio{
+  float: left;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn-negro{
+  font-family: 'Alegreya Sans', sans-serif;
+  background-color: #313131;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #E1E1E1;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display:flex;
+
+}
+.btn-negro:hover {
+  background-color: #c69f57;
+}
+
+
+.btn-transparente{
+  font-family: 'Alegreya Sans', sans-serif;
+  border: 2px solid #313131;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #313131;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  max-width: 111px;
+  height: 33px;
+  margin-top: 36px;
+  margin-left: 30px;
+}
+
+.btn-transparente:hover {
+  background-color: #313131;
+  color: #E1E1E1;
+}
+
+
+
+
+
+/* main {
   padding-top: 114px;
   color: #c69f57;
   font-family: 'Noto Serif', serif;
@@ -115,48 +227,47 @@ main button {
 }
 
 main {
+  max-width: 10;
   margin: auto;
   overflow: hidden;
-  background-color: #e1e1e1;
-  background-image: url(../images/textura-copas.png);
-  background-image: repeating-linear-gradient(20);
-}
+} */
 
-.ppal {
+/* .ppal {
   max-width: 600px;
   margin: auto;
   overflow: hidden;
   background-color: #e1e1e1;
   background-image: url(../images/textura-copas.png);
   background-image: repeating-linear-gradient(20);
-}
+} */
 
-.detalle {
+/* .detalle {
   min-width: 500px;
   max-width: 700px;
   height: 380px;
   border: red 1px solid;
   margin: 10px 10px 0;
-}
-.detalle h1 {
+} */
+
+/* main h1 {
   text-transform: uppercase;
   font-size: 30px;
   color: #313131;
   margin-top: 15px;
 }
-.detalle hr {
+main hr {
   margin-left: 160px;
   margin-right: 160px;
   margin-top: 18px;
   border: 1px solid #c69f57;
 }
 
-main .ppal .detalle .botella {
+main  .botella {
   max-width: 80%;
   margin: 0 auto;
 }
 
-main .ppal .detalle .botella img {
+main  .botella img {
   width: 66px;
   float: left;
 }
@@ -201,7 +312,7 @@ main .ppal .detalle .botella img {
   max-width: 300px;
   color: #313131;
   font-size: 50px;
-}
+} */
 
 /* ACÁ TERMINA EL MAIN
 
@@ -209,10 +320,11 @@ ACÁ EMPIEZA EL FOOTER */
 footer {
   background-color: #c69f57;
   color: #313131;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
   padding-bottom: 10px;
+  margin-top: 50px;
 }
 
 footer img {
@@ -305,18 +417,7 @@ footer a:hover {
   }
 }
 @media (min-width: 100px) and (max-width: 500.00px) {
-  h1 {
-    margin: 0 auto;
-    padding: 5px;
-    text-align: center;
-  }
-  h3 {
-    font-size: 20px;
-    padding: 3px;
-    margin: 0 auto;
-    max-width: 500px;
-    width: 200px;
-  }
+
   .btn-mio,
   .btn-mio:active {
     background-color: #c69f57;

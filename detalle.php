@@ -11,7 +11,7 @@ $usuarioLogueado = traerUsuarioLogueado();
 
 <head>
   <meta charset="utf-8">
-  <title>Perfil</title>
+  <title>Detalel de Producto</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/detalle.css">
@@ -57,8 +57,7 @@ $usuarioLogueado = traerUsuarioLogueado();
   </header>
 
   <!-- Modal -->
-  <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -72,7 +71,7 @@ $usuarioLogueado = traerUsuarioLogueado();
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button onclick="window.location.href = 'carrito.php';" type="button" class="btn btn-primary">Ver carrito</button>
+          <button onclick="window.location.href = 'carrito.html';" type="button" class="btn btn-primary">Ver carrito</button>
         </div>
       </div>
     </div>
@@ -80,43 +79,45 @@ $usuarioLogueado = traerUsuarioLogueado();
   <!-- Modal -->
 
   <main>
-    <div class="ppal">
-      <div class="detalle">
-        <h1>nuestro producto</h1>
-        <hr>
-        <div class="col-12 md-6 botella">
+    <section>
+      <article class="">
+        <h1>Nuestro producto</h1>
+        <div class="borde"></div>
+      </article>
+
+      <article class="product-detail">
+        <div class="">
           <img src="images/botella.png" alt="Botella">
         </div>
-        <div class="col-12 md-6 botella-anio">
-          <h1>2017</h1>
-        </div>
-        <div class="col-12 md-6 botella-varietal">
-          <br>
-          <h1>malbec</h1>
-        </div>
-        <div class="col-12 md-6 botella-descripcion">
-          <br>
-          <p>El continuo esfuerzo por progresa, el equipo de trabajo, la innovación, la inversión en tecnología y la constante búsqueda por alcanzar la máxima expresión de los vinos que identifican las virtudes de nuestro terroir, han logrado que Mila Wine sea reconocida por brindar al mercado vinos de excelente calidad, personalidad, carácter y estilo propio.</p>
-        </div>
-        <div class="col-12 md-6 botella-precio">
-            <h2>$759</h2>
+
+        <h3>2017 <b>MALBEC</b></h3>
+        <p>El continuo esfuerzo por progresa, el equipo de trabajo, la innovación, la inversión en tecnología y la constante búsqueda por alcanzar la máxima expresión de los vinos que identifican las virtudes de nuestro terroir, han logrado que Mila Wine
+          sea reconocida por brindar al mercado vinos de excelente calidad, personalidad, carácter y estilo propio.
+        </p>
+        <div class="comprar-volver">
+          <div class="precio-comprar">
+            <h5 class="precio">$759</h5>
+            <button onclick="window.location.href = 'carrito.html';" class="btn btn-negro" type="button" name="button">COMPRAR</button>
           </div>
-      </div>
-    </div>
+          <button onclick="window.location.href = 'productos.html';" class="btn btn-transparente" type="button" name="button">VOLVER</button>
+        </div>
+
+      </article>
+    </section>
   </main>
 
   <footer>
     <div class="footer row justify-content-center">
-      <img  src="images/logoMila2.png" alt="logo">
+      <img src="images/logoMila2.png" alt="logo">
       <h5>Todos los derechos reservados 2019</h5>
       <div class="iconos">
-        <a  href="#">
+        <a href="#">
           <span class="icon-facebook2"></span>
         </a>
-        <a  href="#">
+        <a href="#">
           <span class="icon-instagram"></span>
         </a>
-        <a  href="#">
+        <a href="#">
           <span class=" icon-twitter"></span>
         </a>
       </div>
@@ -127,4 +128,5 @@ $usuarioLogueado = traerUsuarioLogueado();
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
+
 </html>
