@@ -72,7 +72,7 @@ $usuarioLogueado = traerUsuarioLogueado();
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button onclick="window.location.href = 'carrito.html';" type="button" class="btn btn-primary">Ver carrito</button>
+          <button onclick="window.location.href = 'carrito.php';" type="button" class="btn btn-primary">Ver carrito</button>
         </div>
       </div>
     </div>
