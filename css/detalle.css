@@ -127,10 +127,12 @@ main section h1{
 
 .product-detail img{
   width: 100px;
+
 }
 
 
-.product-detail{
+
+.contenedor-column{
   display: flex;
   flex-direction: column;
 }

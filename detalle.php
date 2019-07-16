@@ -88,23 +88,21 @@ $usuarioLogueado = traerUsuarioLogueado();
         <div class="borde"></div>
       </article>
 
+      <img src="images/botella.png" alt="Botella">
       <article class="product-detail">
-        <div class="">
-          <img src="images/botella.png" alt="Botella">
+        <div class="contenedor-column">
+          <h3>2017 <b>MALBEC</b></h3>
+          <p>El continuo esfuerzo por progresa, el equipo de trabajo, la innovación, la inversión en tecnología y la constante búsqueda por alcanzar la máxima expresión de los vinos que identifican las virtudes de nuestro terroir, han logrado que Mila Wine
+            sea reconocida por brindar al mercado vinos de excelente calidad, personalidad, carácter y estilo propio.
+          </p>
+          <div class="comprar-volver">
+            <div class="precio-comprar">
+              <h5 class="precio">$759</h5>
+              <button onclick="window.location.href = 'carrito.php';" class="btn btn-negro" type="button" name="button">COMPRAR</button>
+            </div>
+            <button onclick="window.location.href = 'productos.php';" class="btn btn-transparente" type="button" name="button">VOLVER</button>
         </div>
-
-        <h3>2017 <b>MALBEC</b></h3>
-        <p>El continuo esfuerzo por progresa, el equipo de trabajo, la innovación, la inversión en tecnología y la constante búsqueda por alcanzar la máxima expresión de los vinos que identifican las virtudes de nuestro terroir, han logrado que Mila Wine
-          sea reconocida por brindar al mercado vinos de excelente calidad, personalidad, carácter y estilo propio.
-        </p>
-        <div class="comprar-volver">
-          <div class="precio-comprar">
-            <h5 class="precio">$759</h5>
-            <button onclick="window.location.href = 'carrito.php';" class="btn btn-negro" type="button" name="button">COMPRAR</button>
-          </div>
-          <button onclick="window.location.href = 'productos.php';" class="btn btn-transparente" type="button" name="button">VOLVER</button>
         </div>
-
       </article>
     </section>
   </main>
