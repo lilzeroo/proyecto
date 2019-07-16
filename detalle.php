@@ -12,6 +12,7 @@ $usuarioLogueado = traerUsuarioLogueado();
 <head>
   <meta charset="utf-8">
   <title>Detalel de Producto</title>
+  <meta http-equiv="Pragma" content="no-cache">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/detalle.css">
@@ -87,9 +88,10 @@ $usuarioLogueado = traerUsuarioLogueado();
         <h1>Nuestro producto</h1>
         <div class="borde"></div>
       </article>
-
-      <img src="images/botella.png" alt="Botella">
       <article class="product-detail">
+        <div class="imagen">
+          <img src="images/botella.png" alt="Botella">
+        </div>
         <div class="contenedor-column">
           <h3>2017 <b>MALBEC</b></h3>
           <p>El continuo esfuerzo por progresa, el equipo de trabajo, la innovación, la inversión en tecnología y la constante búsqueda por alcanzar la máxima expresión de los vinos que identifican las virtudes de nuestro terroir, han logrado que Mila Wine
@@ -106,6 +108,7 @@ $usuarioLogueado = traerUsuarioLogueado();
       </article>
     </section>
   </main>
+
 
   <footer>
     <div class="footer row justify-content-center">
