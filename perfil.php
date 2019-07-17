@@ -10,6 +10,7 @@ $usuarioLogueado = traerUsuarioLogueado();
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Pragma" content="no-cache">
   <title>Perfil</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -42,7 +43,7 @@ $usuarioLogueado = traerUsuarioLogueado();
         </div>
         <div class="logReg">
           <?php if ($usuarioLogueado != null) : ?>
-            <a class="nav-item nav-link s1" href="perfil.php"> MI CUENTA
+            <a class="nav-item nav-link s1" href="perfil.php">MI CUENTA
           <?php else: ?>
           <a class="nav-item nav-link s1" href="login.php">LOGIN</a>
           <a class="nav-item nav-link s2" href="registro.php">REGISTRO</a>
@@ -55,16 +56,24 @@ $usuarioLogueado = traerUsuarioLogueado();
     </nav>
   </header>
 
-  <main>
-    <div class="row-fluid col-12 perfil-responsive">
-      <h1>Perfil</h1>
-      <img src="images/tony.png" alt="Foto de Perfil" class="stark">
-      <div class="col-12 texto-perfil">
-        <?php if ($usuarioLogueado != null) : ?>
-          <h3 class="title"><?= $usuarioLogueado["nombre"]. " " .$usuarioLogueado["apellido"]. "<br>" .$usuarioLogueado["email"]?></h3>
-        <?php endif; ?>
-      </div>
-      <button onclick="window.location.href = 'login.html';" class="btn btn-mio form-group" type="submit" name="button">Modificar Contraseña</button>
+  <main class="container">
+    <h1>Perfil</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-2">
+        <img src="images/avatar.png" alt="Avatar" width="200px">
+        </div>
+        <div class="col-md-5">
+          <?php if ($usuarioLogueado != null) : ?>
+          <h2 class="title"><?= $usuarioLogueado["nombre"]. " " .$usuarioLogueado["apellido"]?></h2>
+          <h3><?= $usuarioLogueado["email"]?></h3>
+          </div>
+            <div class="w-100"></div>
+            <a href="#"><h4>AJUSTES</h4></span></a>
+
+
+
+            <?php endif; ?>
+
     </div>
   </main>
 

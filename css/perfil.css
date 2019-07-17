@@ -78,43 +78,37 @@ header nav div div a:hover {
 /* ACÁ TERMINA EL HEADER */
 /* ACÁ EMPIEZA EL MAIN */
 main {
-  padding-top: 114px;
+  padding-top: 140px;
   color: #c69f57;
   font-family: 'Noto Serif', serif;
-  z-index: 100;
-  position: relative;
-}
 
-main form label {
-  font-size: 22px;
 }
 
 main h1 {
   text-align: center;
   font-size: 60px;
 }
-
-main button {
-  font-family: 'Alegreya Sans', sans-serif;
-  margin-top: 20px;
-}
-
-main {
-  max-width: 600px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.stark {
-  width: 200px;
-  border-radius: 200px;
-  float: left;
-}
-
-.texto-perfil {
-  padding-top: 40px;
-  padding-left: 240px;
+main h2{
   color: white;
+  padding-top: 20px;
+
+}
+main h3{
+  color: white;
+
+}
+main a{
+  color: #c69f57;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+main a:hover{
+  text-decoration: none;
+  color: #E1E1E1;
+}
+ .icon-cog{
+  margin-left: 5px;
+  padding-top: 5px;
+
 }
 
 /* ACÁ TERMINA EL MAIN
@@ -185,8 +179,9 @@ footer a:hover {
 .btn-mio:active {
   background-color: #c69f57;
   border-radius: 8px;
-  font-size: 27px;
+  font-size: 15 px;
   color: #313131;
+  margin-top: 10px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -218,35 +213,7 @@ footer a:hover {
   }
 }
 @media (min-width: 100px) and (max-width: 500.00px) {
-  .perfil-responsive {
-    max-width: 200px;
-    margin: 0 auto;
-  }
-  .texto-perfil {
-    padding-top: 3px;
-    padding-left: 0px;
-    color: white;
-  }
-  h1 {
-    margin: 0 auto;
-    padding: 5px;
-    text-align: center;
-  }
-  h3 {
-    font-size: 20px;
-    padding: 3px;
-    margin: 0 auto;
-    max-width: 500px;
-    width: 200px;
-  }
-  main div img {
-    width: 100%;
-  }
-  .perfil-responsive {
-    box-sizing: border-box;
-    width: 300px;
-    height: 530px;
-  }
+
   .btn-mio,
   .btn-mio:active {
     background-color: #c69f57;
