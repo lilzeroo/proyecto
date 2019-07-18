@@ -57,21 +57,20 @@ $usuarioLogueado = traerUsuarioLogueado();
     </nav>
   </header>
 
-  <main class="container">
+  <main class="container ">
     <h1>Perfil</h1>
     <div class="row justify-content-center">
-      <div class="col-md-2">
-        <img src="images/avatar.png" alt="Avatar" width="200px">
+      <div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2 col-sm-4 col-2">
+        <a href="#"><img src="images/avatar.png" alt="Avatar" width="200px"></a>
+
         </div>
-        <div class="col-md-5">
+        <div class="col-12 col-sm-12 col-md-7 col-lg-5 col-xl-4 align-items-sm-center">
           <?php if ($usuarioLogueado != null) : ?>
           <h2 class="title"><?= $usuarioLogueado["nombre"]. " " .$usuarioLogueado["apellido"]?></h2>
           <h3><?= $usuarioLogueado["email"]?></h3>
           </div>
             <div class="w-100"></div>
             <a href="#"><h4>AJUSTES</h4></span></a>
-
-
 
             <?php endif; ?>
 
