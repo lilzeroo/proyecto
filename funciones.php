@@ -3,7 +3,56 @@
 session_start();
 
 function validarRegistracion($datos) {
-  return [];
+  $errores = [];
+
+  if (strlen($_POST["nombre"]) < 3) {
+    $errores["nombre"] = "El nombre debe tener al menos 3 caracteres";
+  }
+  if (strlen($_POST["apellido"]) < 3) {
+    $errores["apellido"] = "El apellido debe tener al menos 3 caracteres";
+  }
+  if ($datos["email"] == "") {
+    $errores["email"] = "Tenes que indicar tu email";
+  }
+  else if (filter_var($datos["email"], FILTER_VALIDATE_EMAIL) == false) {
+    $errores["email"] = "El mail no es valido";
+  }
+  else if (existeElEmail($datos["email"])) {
+    $errores["email"] = "Ese email ya esta registrado";
+  }
+  if ($datos["nacimiento"] == "") {
+    $errores["nacimiento"] = "Tenes que indicar tu fecha de nacimiento";
+  }
+  else if (validateAge($datos["nacimiento"]) == false) {
+    $errores["nacimiento"] = "Tenes que ser mayor de edad";
+  }
+  if ($datos["pass"] == "") {
+    $errores["pass"] = "Tenes que colocar una contraseña";
+  }
+
+  if (strlen($_POST["pass"]) < 8) {
+    $errores["pass"] = "La contraseña debe tener al menos 8 caracteres";
+  }
+
+  if ($datos["verpass"] == "") {
+    $errores["verpass"] = "Tenes que verificar la contraseña";
+  }
+
+  if ($datos["pass"] != "" && $datos["verpass"] != "" && $datos["pass"] != $datos["verpass"]) {
+    $errores["pass"] = "Las contraseñas no coinciden";
+  }
+
+return $errores;
+}
+
+function buscarUsuarioPorId($id) {
+  $usuarios = traerTodosLosUsuarios();
+
+  foreach ($usuarios as $usuario) {
+    if ($usuario["id"] == $id) {
+      return $usuario;
+    }
+  }
 }
 
 function validarLogin($datos) {
@@ -110,6 +159,22 @@ function traerUsuarioLogueado() {
   }
 
   return null;
+}
+
+function validateAge($birthday, $age = 18)
+{
+    // $birthday can be UNIX_TIMESTAMP or just a string-date.
+    if(is_string($birthday)) {
+        $birthday = strtotime($birthday);
+    }
+
+    // check
+    // 31536000 is the number of seconds in a 365 days year.
+    if(time() - $birthday < $age * 31536000)  {
+        return false;
+    }
+
+    return true;
 }
 
 ?>

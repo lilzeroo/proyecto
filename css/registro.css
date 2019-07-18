@@ -94,6 +94,11 @@ main h1 {
   font-size: 60px;
 }
 
+main p{
+  color: #F78181    ;
+  text-align: center;
+}
+
 main button {
   font-family: 'Alegreya Sans', sans-serif;
   margin-top: 20px;
@@ -109,9 +114,10 @@ footer {
   background-color: #c69f57;
   color: #313131;
   width: 100%;
-  position: fixed;
+  position: relative;
   bottom: 0px;
   padding-bottom: 10px;
+  margin-top: 50px;
 }
 
 footer img {
@@ -181,7 +187,11 @@ footer a:hover {
 .form-check-input:active {
   margin-top: 7px;
 }
-
+@media (min-height: 824px) and (max-height: 3000px){
+  footer{
+    position: fixed;
+  }
+}
 @media (min-width: 100px) and (max-width: 767.98px) {
   .primero {
     border-right: none;

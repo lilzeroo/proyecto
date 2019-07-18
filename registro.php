@@ -2,6 +2,13 @@
 
 require_once("funciones.php");
 
+
+$nombreDefault = "";
+$apellidoDefault = "";
+$emailDefault = "";
+$fechaDefault = "";
+
+
 if (estaLogueado()) {
   header("location:home.php");exit;
 }
@@ -12,15 +19,22 @@ if ($_POST) {
     $errores = validarRegistracion($_POST);
 
 
-     if (count($errores) == 0) {
+     if (empty($errores)) {
 
        $usuario = armarUsuario($_POST);
 
        guardarUsuario($usuario);
 
-       header("location:home.php");exit;
+       header("location:login.php");exit;
      }
-}
+
+
+     }
+
+
+
+
+
 
  ?>
 <!DOCTYPE html>
@@ -60,7 +74,8 @@ if ($_POST) {
         </div>
         <div class="logReg">
           <?php if ($usuarioLogueado != null) : ?>
-            <a class="nav-item nav-link s1" href="perfil.php"> MI CUENTA
+            <a class="nav-item nav-link s1" href="perfil.php">MI PERFIL
+            <a class="nav-item nav-link s2" href="cerrar_sesion.php">SALIR</a>
           <?php else: ?>
           <a class="nav-item nav-link s1" href="login.php">LOGIN</a>
           <a class="nav-item nav-link s2" href="registro.php">REGISTRO</a>
@@ -75,36 +90,48 @@ if ($_POST) {
 
   <main class="container-fluid">
     <h1>Registrate</h1>
+
+    <p><?php  if ($_POST) {
+        $errores = validarRegistracion($_POST);
+    foreach ($errores as $error) {
+           echo $error . "<br>";}
+           $nombreDefault = $_POST["nombre"];
+           $apellidoDefault = $_POST["apellido"];
+           $emailDefault = $_POST["email"];
+           $nacimientoDefault = $_POST["nacimiento"];
+         } ?></p>
+
     <form action="registro.php" method="post">
 
       <div class="form-row justify-content-center justify-content-md-start">
         <div class="form-group col-md-3 offset-md-2 col-9">
           <label for="nombre">Nombre:</label>
-          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escriba su nombre" value="<?=$nombreDefault?>" required>
         </div>
+
         <div class="form-group col-md-3 offset-md-2 col-9">
           <label for="apellido">Apellido:</label>
-          <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Escriba su apellido" required>
+          <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Escriba su apellido" value="<?=$apellidoDefault?>" required >
         </div>
         <div class="form-group col-md-3 offset-md-2 col-9">
           <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@milawine.com" required>
+          <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@milawine.com" value="<?=$emailDefault?>" required >
         </div>
         <div class="form-group col-md-3 offset-md-2 col-9 ">
           <label for="nacimiento">Fecha de nacimiento:</label>
-          <input type="date" class="form-control" id="nacimiento"name="nacimiento" min="1930-01-01" max="2001-7-12"  required>
+          <input type="date" class="form-control" id="nacimiento"name="nacimiento" min="1930-01-01" max="2001-7-12"  value="<?=$nacimientoDefault?>" required >
         </div>
         <div class="form-group col-md-3 offset-md-2  col-9">
           <label for="pass">Contraseña:</label>
-          <input type="password" class="form-control" id="pass" name="pass" placeholder="Escriba por favor su contraseña" required>
+          <input type="password" class="form-control" id="pass" name="pass" placeholder="Escriba por favor su contraseña" required >
         </div>
         <div class="form-group col-md-3 offset-md-2 col-9 ">
           <label class="col-12 ve" for="verpass">Verificar contraseña:</label>
-          <input type="password" class="form-control" id="verpass" name="verpass" placeholder="Confirmar por favor contraseña" required>
+          <input type="password" class="form-control" id="verpass" name="verpass" placeholder="Confirmar por favor contraseña" required >
         </div>
         <button  class="btn btn-mio form-group col-6 col-sm-5 col-md-2 offset-md-5 " type="submit"  >Registrarme</button>
-
       </div>
+
     </form>
   </main>
 
