@@ -47,13 +47,12 @@ $usuarioLogueado = traerUsuarioLogueado();
         </div>
         <div class="logReg">
           <?php if ($usuarioLogueado != null) : ?>
-            <a class="nav-item nav-link s1" href="perfil.php">MI PERFIL
-            <a class="nav-item nav-link s2" href="cerrar_sesion.php">SALIR</a>
+            <a class="nav-item nav-link s1" href="perfil.php"> MI CUENTA
           <?php else: ?>
           <a class="nav-item nav-link s1" href="login.php">LOGIN</a>
           <a class="nav-item nav-link s2" href="registro.php">REGISTRO</a>
           <?php endif; ?>
-          <a class="nav-item nav-link s2" href="carrito.php">
+          <a data-toggle="modal" data-target="#basicExampleModal" class="nav-item nav-link s2" href="#">
             <span class="icon-cart"></span>
           </a>
         </div>
