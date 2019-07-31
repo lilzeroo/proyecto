@@ -44,7 +44,7 @@ $usuarioLogueado = traerUsuarioLogueado();
           <a class="nav-item nav-link s1" href="login.php">LOGIN</a>
           <a class="nav-item nav-link s2" href="registro.php">REGISTRO</a>
           <?php endif; ?>
-          <a class="nav-item nav-link s2" href="carrito.php">
+          <a data-toggle="modal" data-target="#basicExampleModal" class="nav-item nav-link s2" href="carrito.php">
             <span class="icon-cart"></span>
           </a>
         </div>
